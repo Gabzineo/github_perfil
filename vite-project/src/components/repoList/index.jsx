@@ -4,6 +4,7 @@ import styles from "./ReposList.module.css";
 const Reposlist = ({ nomeusuario }) => {
     const [repos, setRepos] = useState([]);
     const [montarform, setMontarform] = useState(true);
+    const [menssagemErro, setMenssagemErro] = useState(false);
 
     useEffect(() => {
         setMontarform(true);
@@ -14,12 +15,18 @@ const Reposlist = ({ nomeusuario }) => {
                     setMontarform(false);
                     setRepos(resJson);
                 }, 3000);
-            });
+            })
+            .catch(erro => {
+                setMenssagemErro(true);
+            })
     }, [nomeusuario]);
 
     return (
         <body>
             <div className="container">
+                {menssagemErro && (
+                    <h1>Não achamos</h1>
+                )}
             {montarform ? (
                 <h1>Carregando...</h1>
             ) : (
