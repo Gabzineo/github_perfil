@@ -21,10 +21,6 @@ function App() {
         </>
       )}
 
-      {/* {Formularioestavisivel && (
-        <Formulario />
-      )}
-    <button onClick={() => setFormularioestavisivel(!Formularioestavisivel)} type="button">Toggle  Form</button> */}
     </>
   )
 }

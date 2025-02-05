@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./Reposlist.module.css";
+import styles from "./ReposList.module.css";
 
 const Reposlist = ({ nomeusuario }) => {
     const [repos, setRepos] = useState([]);
