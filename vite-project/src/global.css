@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--corSecundaria);
+}
+
+.containerInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    background-color: var(--corPrincipal);
+    padding-bottom: 13px;
+}
+input{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    
+}
+
+:root {
+    --corPrincipal: #2c3e50;
+    --corSecundaria: #34495e;
+    --corTerciaria: #55efc4;
+}
